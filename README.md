@@ -64,20 +64,9 @@ A modified U-Net incorporates an additional loss term that penalizes differences
 
 The combined objective is:
 
-\[
-\mathcal{L}_{total}
-=
-\mathcal{L}_{MSE}
-+
-\lambda\mathcal{L}_{feature}
-\]
-
-where:
-
-- \(\mathcal{L}_{MSE}\) measures reconstruction error.
-- \(\mathcal{L}_{feature}\) represents the feature-preservation penalty.
-- \(\lambda\) controls the relative contribution of the feature-preservation objective.
-
+- $L_{\mathrm{MSE}}$ measures reconstruction error.
+- $L_{\mathrm{feature}}$ represents the feature-preservation penalty.
+- $\lambda$ controls the relative contribution of the feature-preservation objective.
 The feature loss uses differentiable intensity and gradient statistics rather than the full standardized radiomic feature set.
 
 ### 5. Model evaluation
