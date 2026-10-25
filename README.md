@@ -61,12 +61,10 @@ Mean squared error (MSE) is used as the reconstruction objective.
 ### 4. Feature-preserving reconstruction model
 
 A modified U-Net incorporates an additional loss term that penalizes differences in selected tumour intensity statistics and local image gradients.
+The combined objective is:
 
-The combined objective is: 
 $$
-\mathcal{L}_{\mathrm{total}} =
-\mathcal{L}_{\mathrm{MSE}} +
-\lambda \mathcal{L}_{\mathrm{feature}}
+\mathcal{L}_{\mathrm{total}} = \mathcal{L}_{\mathrm{MSE}} + \lambda \mathcal{L}_{\mathrm{feature}}
 $$
 
 - $L_{\mathrm{MSE}}$ measures reconstruction error.
