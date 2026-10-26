@@ -1,0 +1,45 @@
+# Python and Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Medical imaging datasets
+data/
+datasets/
+downloads/
+Task06_Lung/
+imagesTr/
+imagesTs/
+labelsTr/
+*.nii
+*.nii.gz
+*.nrrd
+*.dcm
+
+# Trained models
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+models/
+runs/
+
+# Temporary files
+.cache/
+*.log
+*.tmp
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# System files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
